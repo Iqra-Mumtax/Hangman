@@ -1,13 +1,6 @@
 /*HEADER:
  * Name: Iqra Mumtaz
- * Roll No.: L14-4121
- * Course/Section: Advance Programming (B)
  * E-mail ID: l144121@lhr.nu.edu.pk
- * 
- * Name: Saba Abbas
- * Roll No.:  
- * Course/Section: Advance Programming (A)
- * E-mail ID: l14@lhr.nu.edu.pk
  * 
  * JAVA String and String Buffer
  * HANGMAN - Guess The Word!
@@ -35,7 +28,7 @@ public class Hangman {
 		
 		//echoing..for developer only commented for end users
 		//System.out.println("Random Word Number: " + index);
-		System.out.println("Word to be guessed: " + wordToBeGuessed);
+		//System.out.println("Word to be guessed: " + wordToBeGuessed);
 		//System.out.println("Word to be guessed is " + wordToBeGuessed.length() + " letters long.");
 		
 		//creating new string to represent the secret word
@@ -88,25 +81,15 @@ public class Hangman {
 				{
 					if (wordToBeGuessed.charAt(i) == guessChar.charAt(0)) 
 					{
-					//	StringBuffer die = new StringBuffer (temp+guessChar.charAt(i));						
-						//temp = die.toString();
 						tempGuessed = tempGuessed + guessChar;		
-						System.out.println("1 IF TempGuessed: " +tempGuessed);
 					} 
 					else if (guessedWord.charAt(i) != '-') 
 					{
-						
-						//StringBuffer die = new StringBuffer (temp+wordToBeGuessed.charAt(i));						
-						//temp = die.toString();			
-						
 						tempGuessed = tempGuessed + wordToBeGuessed.charAt(i);
-						System.out.println("2 IF TempGuessed: " +tempGuessed);
-						System.out.println("2 IF guessedWord: " +guessedWord);
 					} 
 					else 
 					{
 						tempGuessed += "-";
-						System.out.println("3 IF TempGuessed: " +tempGuessed);
 					}
 				}
 
